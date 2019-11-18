@@ -1,0 +1,66 @@
+@import 'media';
+@import 'mixins';
+@import 'variables';
+
+* {
+    font-family: $font-stack;
+    @include push-auto();
+}
+
+h1 {
+    font-size: $font-size-h1;
+    color: $primaryColor;
+    text-align: $center;
+}
+
+h2 {
+    text-align: $center;
+}
+
+@include media_queries('mobile') { 
+    li { 
+        color: green;
+    } 
+    footer {
+        color: blue;
+    }
+}
+
+.container {
+    text-align: $center;
+}
+
+nav {
+    ul {
+      margin: $margin-nav;
+      padding: $padding-nav;
+      list-style: none;
+    }
+  
+    li { display: inline-block; }
+  
+    a {
+      color: $nav-color;
+      display: block;
+      padding: $a-padding;
+      text-decoration: none;
+    }
+}
+
+.author {
+    @include author();
+}
+
+p {
+    @include p();
+    font-size: $fontSize-txt;
+    padding: $padded-txt;
+}
+
+footer {
+    padding: $footer;
+    background-color: $footer-color;
+    color: $footer-font-color;
+    text-align: $center;
+}
+

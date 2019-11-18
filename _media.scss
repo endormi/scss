@@ -1,0 +1,11 @@
+$breakpoints: (
+    "mobile": 400px,
+);
+@mixin media_queries($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
