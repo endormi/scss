@@ -1,5 +1,5 @@
-# Common-SCSS
+# SCSS
 
-These are my common `SCSS` variables, mixins, media_queries that I use.
+These are my `SCSS` variables, mixins, media queries.
 
 Will be updated soon...

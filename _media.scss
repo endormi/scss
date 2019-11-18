@@ -1,5 +1,9 @@
 $breakpoints: (
     "mobile": 400px,
+    "tablet": 768px,
+    "laptop": 1280px,
+    "desktop-laptop": 1366px,
+    "desktop-lg": 1920px,
 );
 @mixin media_queries($width, $type: max) {
     @if map_has_key($breakpoints, $width) {
