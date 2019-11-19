@@ -10,24 +10,21 @@
 h1 {
     font-size: $font-size-h1;
     color: $primaryColor;
-    text-align: $center;
+    text-align: $align;
 }
 
 h2 {
-    text-align: $center;
+    text-align: $align;
 }
 
 @include media_queries('mobile') { 
     li { 
         color: green;
-    } 
-    footer {
-        color: blue;
     }
 }
 
 .container {
-    text-align: $center;
+    text-align: $align;
 }
 
 nav {
@@ -40,7 +37,7 @@ nav {
     li { display: inline-block; }
   
     a {
-      color: $nav-color;
+      color: $secondaryColor;
       display: block;
       padding: $a-padding;
       text-decoration: none;
@@ -54,13 +51,13 @@ nav {
 p {
     @include p();
     font-size: $fontSize-txt;
-    padding: $padded-txt;
+    padding: $pad-txt;
 }
 
 footer {
     padding: $footer;
-    background-color: $footer-color;
+    background-color: $secondaryColor;
     color: $footer-font-color;
-    text-align: $center;
+    text-align: $align;
 }
 

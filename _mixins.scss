@@ -11,14 +11,14 @@
 }
 
 @mixin p {
-  color: rgb(0, 119, 255);
-  font-size: 25px;
+  color: rgb(255, 0, 0);
+  margin: 2rem;
   font-weight: 1000;
   border: 1px solid rgb(0, 99, 248);
 }
 
 @mixin author {
-  text-align: $center;
+  text-align: $align;
   color: #333;
   text-decoration: none;
 }
