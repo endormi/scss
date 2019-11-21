@@ -22,7 +22,7 @@ Mixins:
     }
   }
 
-... {
+* {
     @include push-auto();
 }
 ```
@@ -46,9 +46,9 @@ $breakpoints: (
     }
 }
 
-@include media_queries('mobile') {
-    ... {
-        ...: ...;
+@include media_queries('mobile') { 
+    li { 
+        color: rgb(4, 0, 255);
     }
 }
 ```

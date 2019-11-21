@@ -19,7 +19,7 @@ h2 {
 
 @include media_queries('mobile') { 
     li { 
-        color: green;
+        color: rgb(4, 0, 255);
     }
 }
 
@@ -60,4 +60,3 @@ footer {
     color: $footer-font-color;
     text-align: $align;
 }
-
